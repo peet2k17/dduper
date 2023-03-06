@@ -11,7 +11,7 @@ RUN git clone https://github.com/Lakshmipathi/dduper.git && git clone https://gi
 
 # Apply csum patch
 WORKDIR /btrfs-progs
-RUN patch -p1 < /dduper/patch/btrfs-progs-v5.6.1/0001-Print-csum-for-a-given-file-on-stdout.patch
+RUN patch -p1 < /dduper/patch/btrfs-progs-v6.1/0001-Print-csum-for-a-given-file-on-stdout.patch
 
 # Start the btrfs-progs build
 RUN ./autogen.sh
